@@ -1,44 +1,40 @@
+# Game of Life
+A copy of the mtchat repo with updated docker files.
 
-# CPSC350 Assignment 2
-Assignment 2 for CPSC350: Game of Life
+This repo contains programs to implement a multi-threaded TCP chat server and client
+
+* MtClient.java handles keyboard input from the user.
+* ClientListener.java receives responses from the server and displays them.
+* MtServer.java listens for client connections and creates a ClientHandler for each new client.
+* ClientHandler.java receives messages from a client and relays it to the other clients.
 
 
 ## Identifying Information
-Full name: Ariel Gutierrez
-
-Student ID: 2318163
-
-Chapman email: arigutierrez@chapman.edu
-
-Course number and section: CPSC 350-01
-
-Assignment or exercise number: Assignment 2
+* Name: Ariel Gutierrez
+* Student ID: 2318163
+* Email: arigutierrez@chapman.edu
+* Course: CPSC 350-01
+* Assignment: Assignment 2
 
 ## Source Files
-assign2.h
+* assign2.h
+* assign2.cpp
+* main.cpp
 
-assign2.cpp
+## References
+* Converting string of int to int type - https://www.geeksforgeeks.org/converting-strings-numbers-cc/
+* String to double - http://www.cplusplus.com/reference/string/stod/
+* How to know if user pressed enter key - https://stackoverflow.com/questions/42818899/detecting-enter-key-in-c 
+* Sleep function because system("pause") didn't work for me - https://www.softwaretestinghelp.com/cpp-sleep/
+* Class Notes and Textbook
 
-main.cpp
+## Known Errors
+* None that I know of
 
-
-
-## Any known compile or runtime errors, code limitations, or deviations from the assignment specification
-N/A
-
-
-
-## A list of all references used to complete the assignment, including peers
-https://www.geeksforgeeks.org/converting-strings-numbers-cc/ - Converting string of int to int type
-http://www.cplusplus.com/reference/string/stod/ - string to double
-https://stackoverflow.com/questions/42818899/detecting-enter-key-in-c - How to know if user pressed enter key
-https://www.softwaretestinghelp.com/cpp-sleep/ - sleep function because system("pause") didn't work for me
-
-
-## Instructions for running the assignment.
-1. Clone repository to computer
-2. Start and attach compsci docker container
-3. Go to the directory/repository you cloned on computer
-4. Compile program: make all
-5. Run program: ./assign2.out
-6. Clear .out files: make realclean
+## Build and Execution Instructions
+* Clone repository to computer
+* Start and attach compsci docker container
+* Go to the directory/repository you cloned on computer
+* Compile program: make all
+* Run program: ./assign2.out
+* Clear .out files: make realclean
